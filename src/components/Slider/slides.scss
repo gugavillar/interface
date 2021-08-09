@@ -1,0 +1,30 @@
+.swiper-container {
+   width: 100%;
+   .swiper-button-prev,
+   .swiper-button-next {
+      color: #ffba08;
+      width: 60px;
+      height: 60px;
+   }
+   .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+   }
+   .swiper-pagination-bullet-active {
+      background: #ffba08;
+   }
+}
+
+@media (max-width: 420px) {
+   .swiper-container {
+      .swiper-button-prev,
+      .swiper-button-next {
+         width: 32px;
+         height: 32px;
+      }
+      .swiper-pagination-bullet {
+         width: 8px;
+         height: 8px;
+      }
+   }
+}
