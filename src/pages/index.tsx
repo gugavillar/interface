@@ -3,6 +3,46 @@ import { Header } from '../components/Header';
 import { Slider } from '../components/Slider';
 import { TravelTypes } from '../components/TravelTypes';
 import { Divider, Flex, Text, Box } from '@chakra-ui/react';
+
+const slides = [
+  {
+    name: 'Europa',
+    description: 'O continente mais antigo',
+    srcImage: '/images/europe.jpg',
+    urlLink: '/europe'
+  },
+  {
+    name: 'América do sul',
+    description: 'O continente mais animado',
+    srcImage: '/images/south_america.jpg',
+    urlLink: '/south_america'
+  },
+  {
+    name: 'América do norte',
+    description: 'O continente mais desenvolvido',
+    srcImage: '/images/north_america.jpg',
+    urlLink: '/north_america'
+  },
+  {
+    name: 'Asia',
+    description: 'O continente mais oriental',
+    srcImage: '/images/asia.jpg',
+    urlLink: '/asia'
+  },
+  {
+    name: 'Oceania',
+    description: 'O continente mais belo',
+    srcImage: '/images/oceania.jpg',
+    urlLink: '/oceania'
+  },
+  {
+    name: 'Africa',
+    description: 'O continente mais cultural',
+    srcImage: '/images/africa.jpg',
+    urlLink: '/africa'
+  }
+]
+
 export default function Home() {
   return (
     <>
@@ -16,7 +56,7 @@ export default function Home() {
           <Text>Então escolha seu continente</Text>
         </Box>
       </Flex>
-      <Slider />
+      <Slider slides={slides} />
     </>
   )
 }
